@@ -42,6 +42,7 @@ int wmain()
         THROW_IF_FAILED(MFCreateSourceReaderFromMediaSource(MediaSource.get(), nullptr, SourceReader.put()));
         #pragma endregion
 
+        // NOTE: Set working directory to $(TargetDir) to run from debugger and have output file placed near binary
         wil::com_ptr<IMFSinkWriter> SinkWriter;
         THROW_IF_FAILED(MFCreateSinkWriterFromURL(L"VideoMp4WithSinkWriter Output.mp4", nullptr, nullptr, SinkWriter.put()));
         wil::com_ptr<IMFMediaType> OutputMediaType;
@@ -62,7 +63,7 @@ int wmain()
         THROW_IF_FAILED(MFSetAttributeSize(InputMediaType.get(), MF_MT_FRAME_SIZE, 1280u, 720u));
         THROW_IF_FAILED(InputMediaType->SetUINT32(MF_MT_INTERLACE_MODE, MFVideoInterlace_Progressive));
         THROW_IF_FAILED(InputMediaType->SetUINT32(MF_MT_DEFAULT_STRIDE, 1280u * 4)); // Top to bottom, as it comes from Direct2D and unlike old school bitmaps
-        THROW_IF_FAILED(SinkWriter->SetInputMediaType(0, InputMediaType.get(), nullptr));
+        THROW_IF_FAILED(SinkWriter->SetInputMediaType(SinkWriterStreamIndex, InputMediaType.get(), nullptr));
 
         THROW_IF_FAILED(SinkWriter->BeginWriting());
         for(; ; )
@@ -84,7 +85,7 @@ int wmain()
             std::wcout << L"Video sample at " << Time / 1E7 << std::endl;
             #pragma endregion 
 
-            THROW_IF_FAILED(SinkWriter->WriteSample(0, Sample.get()));
+            THROW_IF_FAILED(SinkWriter->WriteSample(SinkWriterStreamIndex, Sample.get()));
         }
         THROW_IF_FAILED(SinkWriter->Finalize());
     }
