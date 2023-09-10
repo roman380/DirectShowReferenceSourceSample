@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>
+  <!--<file name="ReferenceSource.dll">
+    <typelib tlbid="{9E3ABA93-C8D8-41D3-B39E-29508FDE5757}" version="1.0" helpdir="" flags="HASDISKIMAGE"/>
+    <comClass description="Alax.Info About Property Page Object" clsid="{1D4A0563-561B-4593-9C01-D311BB123BF3}" threadingModel="Apartment" tlbid="{9E3ABA93-C8D8-41D3-B39E-29508FDE5757}"/>
+    <comClass description="Reference Video Media Source" clsid="{41134D44-6AAE-43EF-A8BA-BDF01D348359}" threadingModel="Both" tlbid="{9E3ABA93-C8D8-41D3-B39E-29508FDE5757}" progid="AlaxInfo.DSRS.VMS.1"/>
+    <comClass description="Reference Audio Media Source" clsid="{4517A543-908B-41B4-AED9-60E1708F1529}" threadingModel="Both" tlbid="{9E3ABA93-C8D8-41D3-B39E-29508FDE5757}" progid="AlaxInfo.DSRS.AMS.1"/>
+    <comClass description="Reference Video Source" clsid="{94D757E4-1CBD-412E-979B-2DF85A4BC375}" threadingModel="Both" tlbid="{9E3ABA93-C8D8-41D3-B39E-29508FDE5757}"/>
+    <comClass description="Reference Audio Source" clsid="{BF53D5EC-A137-4A3E-B7CF-B673568A9D8B}" threadingModel="Both" tlbid="{9E3ABA93-C8D8-41D3-B39E-29508FDE5757}"/>
+    <comClass description="Reference Video Media Source Texture Reader" clsid="{E1346019-1C7C-4515-93AE-1A75D3E49852}" threadingModel="Both" tlbid="{9E3ABA93-C8D8-41D3-B39E-29508FDE5757}" progid="AlaxInfo.DSRS.VMSTR.1"/>
+    <comClass description="Reference Video Source Registry" clsid="{FCB50E78-D371-48C1-8025-1DD85314DA5D}" threadingModel="Both" tlbid="{9E3ABA93-C8D8-41D3-B39E-29508FDE5757}" progid="AlaxInfo.DSRS.VSR.1"/>
+  </file>-->
+</assembly>

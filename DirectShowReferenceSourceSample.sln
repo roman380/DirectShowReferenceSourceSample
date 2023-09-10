@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VideoMp4WithSinkWriter", "VideoMp4WithSinkWriter\VideoMp4WithSinkWriter.vcxproj", "{D08CB923-7F94-49C5-B177-3491B367A4E6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TrimVideoMp4WithSourceReaderSinkWriter", "TrimVideoMp4WithSourceReaderSinkWriter\TrimVideoMp4WithSourceReaderSinkWriter.vcxproj", "{35B4DA7D-CD3A-49B1-BB99-091B832C889E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{D08CB923-7F94-49C5-B177-3491B367A4E6}.Release|x64.Build.0 = Release|x64
 		{D08CB923-7F94-49C5-B177-3491B367A4E6}.Release|x86.ActiveCfg = Release|Win32
 		{D08CB923-7F94-49C5-B177-3491B367A4E6}.Release|x86.Build.0 = Release|Win32
+		{35B4DA7D-CD3A-49B1-BB99-091B832C889E}.Debug|x64.ActiveCfg = Debug|x64
+		{35B4DA7D-CD3A-49B1-BB99-091B832C889E}.Debug|x64.Build.0 = Debug|x64
+		{35B4DA7D-CD3A-49B1-BB99-091B832C889E}.Debug|x86.ActiveCfg = Debug|Win32
+		{35B4DA7D-CD3A-49B1-BB99-091B832C889E}.Debug|x86.Build.0 = Debug|Win32
+		{35B4DA7D-CD3A-49B1-BB99-091B832C889E}.Release|x64.ActiveCfg = Release|x64
+		{35B4DA7D-CD3A-49B1-BB99-091B832C889E}.Release|x64.Build.0 = Release|x64
+		{35B4DA7D-CD3A-49B1-BB99-091B832C889E}.Release|x86.ActiveCfg = Release|Win32
+		{35B4DA7D-CD3A-49B1-BB99-091B832C889E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
