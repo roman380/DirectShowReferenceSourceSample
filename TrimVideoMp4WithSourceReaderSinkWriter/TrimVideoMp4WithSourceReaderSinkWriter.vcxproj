@@ -79,9 +79,9 @@
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
   <Target Name="AfterBuild">
-    <ItemGroup>
+    <!--<ItemGroup>
       <DependencyFiles Include="$(SolutionDir)bin\$(Platform)\ReferenceSource.dll" />
     </ItemGroup>
-    <Copy SourceFiles="@(DependencyFiles)" DestinationFolder="$(TargetDir)" />
+    <Copy SourceFiles="@(DependencyFiles)" DestinationFolder="$(TargetDir)" />-->
   </Target>
 </Project>
